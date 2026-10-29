@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRLINE | Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('plane.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 24px 35px;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        nav a {
+            font-size: 22px;
+            color: black;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: blue;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .nav-links .home,
+        .nav-links .book,
+        .nav-links .special-offers,
+        .nav-links .contact-us {
+            padding-right: 8px;
+        }
+
+        .log-in {
+            background-color: orange;
+            border: 2px solid white;
+            border-radius: 50px;
+            padding: 17px 35px;
+            margin-left: auto;
+        }
+
+        .log-in a {
+            color: black;
+            font-weight: bold;
+        }
+
+        .log-in:hover {
+            background-color: darkorange;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 140px 170px 120px;
+        }
+
+        h1 {
+            display: block;
+            font-size: 70px;
+            color: darkblue;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: rgb(9, 63, 226);
+            color: white;
+            padding: 40px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                gap: 14px 18px;
+            }
+
+            .hero {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <span class="home"><a href="index.html">Home</a></span>
+                <span class="book"><a href="Book A Flight.html">Book A Flight</a></span>
+                <span class="special-offers"><a href="Special Offers.html">Special Offers</a></span>
+                <span class="contact-us"><a href="Contact Us.html">Contact Us</a></span>
+                <span><a href="About AIRLINE.html">About AIRLINE</a></span>
+            </div>
+            <span class="log-in"><a href="Log in.html">Log in</a></span>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h1>Hi, where would</h1>
+        <h1>you like to go?</h1>
+    </main>
+
+    <footer>
+        &copy; 2024 AIRLINE, All rights reserved
+    </footer>
+</body>
+</html>

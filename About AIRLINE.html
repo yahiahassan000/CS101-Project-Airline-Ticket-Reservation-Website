@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRLINE | About</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('plane.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 24px 35px;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        nav a {
+            font-size: 22px;
+            color: black;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: blue;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .log-in {
+            background-color: orange;
+            border: 2px solid white;
+            border-radius: 50px;
+            padding: 17px 35px;
+            margin-left: auto;
+        }
+
+        .log-in a {
+            color: black;
+            font-weight: bold;
+        }
+
+        .log-in:hover {
+            background-color: darkorange;
+        }
+
+        .content {
+            width: min(80%, 1200px);
+            margin: 140px auto 180px;
+            padding: 30px 30px 60px;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .team-member {
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .team-member img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            margin-left: 20px;
+            border: 7px solid #964e00;
+            border-radius: 20px;
+            float: right;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: rgb(9, 63, 226);
+            color: white;
+            padding: 40px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                gap: 14px 18px;
+            }
+
+            .team-member img {
+                display: block;
+                float: none;
+                margin: 0 0 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="Book A Flight.html">Book A Flight</a></span>
+                <span><a href="Special Offers.html">Special Offers</a></span>
+                <span><a href="Contact Us.html">Contact Us</a></span>
+                <span><a href="About AIRLINE.html">About AIRLINE</a></span>
+            </div>
+            <span class="log-in"><a href="Log in.html">Log in</a></span>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>About AIRLINE</h1>
+        <p>Founded in 2006, AIRLINE has been dedicated to making travel accessible and enjoyable for all. Our goal is to provide seamless flight booking experiences with top-notch customer service.</p>
+        <img src="mostafa.jpeg" alt="Mostafa Ayman" style="width: 150px; height: 150px; object-fit: cover; float: right; margin-left: 20px; border: 7px solid #964e00; border-radius: 20px;">
+
+        <h2>Our Team:</h2>
+
+        <div class="team-member">
+            <h3>Mostafa Ayman</h3>
+            <p>Role: CEO</p>
+            <p>Phone: 01032723318</p>
+            <p>ID: 200062336</p>
+            <img src="image.jpeg" alt="Mostafa Ayman" style="margin-top: 22px;">
+        </div>
+
+        <div class="team-member">
+            <h3>Yahia Mohamed</h3>
+            <p>Role: Chief Technology Officer</p>
+            <p>Phone: 01551197298</p>
+            <p>ID: 200062572</p>
+            <img src="mohamed.jpeg" alt="Yahia Mohamed" style="margin-top: 37px;">
+        </div>
+
+        <div class="team-member">
+            <h3>Mohamed Ajjour</h3>
+            <p>Role: Head of Operations</p>
+            <p>Phone: +970567265323</p>
+            <p>ID: 200062336</p>
+            <img src="yousef.jpeg" alt="Mohamed Ajjour" style="margin-top: 10px;">
+        </div>
+
+        <div>
+            <h3>Youssef Farag</h3>
+            <p>Role: Marketing Director</p>
+            <p>Phone: 01006913271</p>
+            <p>ID: 200063052</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 AIRLINE, All rights reserved
+    </footer>
+</body>
+</html>
